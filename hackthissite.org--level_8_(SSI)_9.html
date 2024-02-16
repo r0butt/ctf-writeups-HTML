@@ -1,0 +1,12 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>level 8 (SSI)</title>
+  <meta name="generator" content="CherryTree">
+  <link rel="stylesheet" href="res/styles4.css" type="text/css" />
+</head>
+<body>
+<div class='page'><h1 class='title'>level 8 (SSI)</h1><br/><p><img src="images/9-1.png" alt="images/9-1.png" /></p><p>alright stephanie! lets see if you&#39;re any better than your dad. i entered my name into her field and hit submit.</p><p><img src="images/9-2.png" alt="images/9-2.png" /><img src="images/9-3.png" alt="images/9-3.png" /></p><p>an shtml file-- interesting! i decided to see if it was validating input or not..</p><p><img src="images/9-4.png" alt="images/9-4.png" /></p><p>no surprise here. this is a good injection point. i ran <code>&lt;!--#exec cmd=&quot;cat /var/www/hackthissite.org/html/missions/basic/8/&quot; --&gt;</code></p><p><img src="images/9-5.png" alt="images/9-5.png" /></p><p>it didn&#39;t like that. let&#39;s try again. &lt;!--#exec cmd=&quot;ls&quot; --&gt;</p><p><img src="images/9-6.png" alt="images/9-6.png" /></p><p>nice; also, SOMETIMES this level would let me execute this cmd, while other times it would display the afformentioned page. not really sure what is up with that. anyway... there are a lot of files listed here. can we check any of them out with a cat cmd? NOPE! just brings up the same page telling me it&#39;s been restricted for hts&#39; security. if i try it via the URL, it just says the page doesn&#39;t exist. i tried cding into /var/, and /etc/ which both failed. i even tried &lt;!--#fsize file=&quot;ztxdhjxn.shtml&quot; → just to see if i COULD touch these files at all; same issue. clearly, these files are not what we are looking for. &lt;!--#exec cmd=&quot;ls ./&quot;→ didn&#39;t work-- &lt;!--#exec cmd=&quot;ls ../&quot;--&gt;, however, did.</p><p><img src="images/9-7.png" alt="images/9-7.png" /></p><p>resolved.</p></div>
+</body>
+</html>

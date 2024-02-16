@@ -1,0 +1,12 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>level 6</title>
+  <meta name="generator" content="CherryTree">
+  <link rel="stylesheet" href="res/styles4.css" type="text/css" />
+</head>
+<body>
+<div class='page'><h1 class='title'>level 6</h1><br/><p><img src="images/7-1.png" alt="images/7-1.png" /></p><p>the encryption system is available via encrypt.php</p><p><img src="images/7-2.png" alt="images/7-2.png" /></p><p>for funsies, i typed ‘abc123’ into the encryption box and received the following</p><p><img src="images/7-3.png" alt="images/7-3.png" /></p><p>this is following a clear encryption scheme; first letter unchanged, second bumped up one, third bumped up two, fourth bumped up three, fifth bumped up four, sixth bumped up five and so on.... i&#39;m not sure how exactly symbols would be handled, though. anyway... since we have the pre-encrypted password, we would be subtracting from these places instead of adding; therefore, <strong>222hi=h@</strong> = 210ee=b@ WITHOUT transforming the respective symbols. i did some digging and found an ASCII conversion chart.</p><p><a href="https://www.asciitable.com/asciifull.gif"><img src="images/7-4.png" alt="images/7-4.png" /></a></p><p>using this i was able to transform each character of the encrypted password and wound up with <strong>210ee8b9</strong>.</p><p></p><p>solved.</p></div>
+</body>
+</html>
